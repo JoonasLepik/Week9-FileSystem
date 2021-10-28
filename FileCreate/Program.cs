@@ -15,11 +15,11 @@ namespace FileCreate
             bool fileExists = File.Exists(fullFilePath);
             if (directoryExist && fileExists)
             {
-                Console.WriteLine($"file {fileName} already exist in {rootDirectory}.");
+                Console.WriteLine($"File {fileName} already exist in {rootDirectory}.");
             }
             else if (!directoryExist)
             {
-                Console.WriteLine($"wishlist directory does not exist.");
+                Console.WriteLine($"Wishlist directory does not exist.");
                 Directory.CreateDirectory(rootDirectory);
                 File.Create(fullFilePath);
                 Console.WriteLine($"File {fileName}.txt and folder has been created.");
